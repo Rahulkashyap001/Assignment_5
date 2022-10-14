@@ -1,0 +1,21 @@
+#Question :- Challenge 1: Square Numbers and Return Their Sum
+
+
+#Solution :- 
+
+class point:
+    def __init__(self,x,y,z):
+        self.x = x
+        self.y = y
+        self.z = z
+
+    def sqSum(self):
+        return (self.x**2 + self.y**2 + self.z**2)
+        
+    def __str__(self):
+        return f"first no : {self.x} , \nSecond no : {self.y} , \nThird no : {self.z}"
+
+point_obj = point(int(input("Enter first value :- ")),int(input("Enter second value :- ")),int(input("Enter Third Value :- ")))
+print(point_obj.sqSum())
+
+
