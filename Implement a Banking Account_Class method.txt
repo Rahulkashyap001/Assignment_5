@@ -1,0 +1,30 @@
+#Question :- Challenge 4: Implement a Banking Account
+
+
+#Solution :- 
+
+
+class Account:
+
+    def __init__(self,tittle,balance):
+        self.tittle = tittle
+        self.balance = balance
+      
+class SavingsAccount(Account):
+
+    def __init__(self,tittle,balance,interestRate):
+        super().__init__(tittle,balance)
+        self.interestRate = interestRate
+        
+    def __str__(self):
+        return f"tittle : {self.tittle}, \nbalance: {self.balance}, \ninterestRate: {self.interestRate}"
+
+
+tittle_ = input("Enter tittle :- ")
+balance_= input("Enter balance :- ")
+interset_Rate = input("Enter interestRate :- ")
+
+    
+SavingsAccount_obj = SavingsAccount(tittle_,balance_,interset_Rate)
+print(SavingsAccount_obj)
+
