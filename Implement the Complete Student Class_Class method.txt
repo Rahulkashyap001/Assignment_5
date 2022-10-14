@@ -1,0 +1,30 @@
+#Question :- Challenge 3: Implement the Complete Student Class
+
+
+
+#Solution :- 
+
+
+class student:
+    def __init__(self,name,rollno):
+        self.__name = name
+        self.__rollno = rollno
+
+    def set_name(self,name):
+        self.__name = name
+
+    def get_name(self):
+        return self.__name
+
+    def set_rollno(self,rollno):
+        self.__rollno = rollno
+
+    def get_rollno(self):
+        return self.__rollno 
+
+student_obj= student(input("Enter a name :- "),input("Enter a rollno :- "))
+
+student_obj.set_name(input("Enter a name :- "))
+print(student_obj.get_name())
+student_obj.set_rollno(input("Enter a rollno :- "))
+print(student_obj.get_rollno())
